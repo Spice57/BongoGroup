@@ -1,4 +1,4 @@
-# BongoGroup
+# Addax
 
 Software Version Control for the Bongo Group
 
@@ -27,3 +27,13 @@ This is a fully functional Blackjack game implemented in Python with a **Tkinter
 2. Run the following command in the terminal:
    ```bash
    python Blackjack.py
+
+### Hardware Requirements:
+- 
+- 2GB RAM
+
+### Software Requirements:
+- Windows, MacOS, or Linux with Python installed
+-Python Version: 3.x
+-Tkinter GUI Library
+-Pygame Library

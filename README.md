@@ -29,7 +29,7 @@ This is a fully functional Blackjack game implemented in Python with a **Tkinter
    python Blackjack.py
 
 ### Hardware Requirements:
-- 
+- 34.5 MB DISK SPACE
 - 2GB RAM
 
 ### Software Requirements:

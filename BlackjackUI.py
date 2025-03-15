@@ -1,4 +1,6 @@
+import pygame
 import tkinter as tk
+from pygame import mixer
 from tkinter import messagebox
 from GameEngine import GameEngine
 
@@ -41,6 +43,7 @@ class BlackjackUI:
         for widget in self.root.winfo_children():
             widget.destroy()  # Clearing main menu before switching views
         # Ensuring UI resets properly without duplicates
+        self.root.configure(bg="lightgreen")
 
         title_label = tk.Label(self.root, text="Blackjack Odds and Probabilities Game Menu",
                                font=("Arial", 16))
@@ -52,6 +55,11 @@ class BlackjackUI:
 
         exit_button = tk.Button(self.root, text="Exit", command=self.root.quit)
         exit_button.pack()
+
+        pygame.mixer.init()
+        mixer.music.load("Lounge.mp3")
+        mixer.music.set_volume(0.7)
+        mixer.music.play()
 
     def start_game(self):
         for widget in self.root.winfo_children():

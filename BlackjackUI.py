@@ -1,6 +1,4 @@
-import pygame
 import tkinter as tk
-from pygame import mixer
 from tkinter import messagebox
 from GameEngine import GameEngine
 
@@ -55,11 +53,6 @@ class BlackjackUI:
 
         exit_button = tk.Button(self.root, text="Exit", command=self.root.quit)
         exit_button.pack()
-
-        pygame.mixer.init()
-        mixer.music.load("Lounge.mp3")
-        mixer.music.set_volume(0.7)
-        mixer.music.play()
 
     def start_game(self):
         for widget in self.root.winfo_children():
